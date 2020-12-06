@@ -10,43 +10,34 @@ body {
 html {
   scroll-behavior: smooth;
 }
-/*--------------------------navbar------------------------------------------*/
-.navbar-brand {
-  font-size: 20px;
-  margin-top: 5px !important;
-  margin-bottom: -10px !important;
+/*---------------------top part---------------------------- */
+.section1,
+.top {
+  width: 100%;
 }
-.navbar-brand p {
-  font-size: 14px;
-  margin-top: -10px;
-}
-.nav-item a,
-.navbar-brand {
-  color: #2ecab6 !important;
-}
-.nav-link {
-  font-weight: bold !important;
-}
-.blink {
-  width: 50px;
-  height: 20px;
-  background: red;
-  border-radius: 10px;
-  text-align: center;
-  font-size: 14px;
+.top {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("images/town1.png");
+
+  /*clip-path: ellipse(130px 140px at 10% 20%);*/
   color: white;
-  margin-top: -12px !important;
-  margin-left: 50px;
+  padding: 50px 30px;
 }
-.bl {
-  margin-left: 80px;
+.fa-angle-right {
+  font-size: 30px;
+  color: red;
+  margin: auto;
 }
-@media (max-width: 992px) {
-  .blink {
-    margin-top: 15px !important;
+@media (max-width: 576px) {
+  .images img {
+    width: 100%;
+    height: auto;
+  }
+  .images h5 {
+    font-size: 16px;
   }
 }
-/*-----------------------navbar end------------------------------------------->*/
+/*--------------------top part end------------------------*/
 /*-----------------------1st part start------------------------------------------->*/
 .a1 {
   background: #2ecab6;
@@ -281,41 +272,7 @@ footer a {
 }
 /*---------------------------last part end---------------------------------------------*/
 
-/****************************Signupp  modal **************************/
-#myform label,
-#myform p {
-  font-size: 18px;
-}
-#myform input[type="text"],
-#myform input[type="password"],
-input[type="email"],
-#myform1 input[type="text"] {
-  padding: 8px 15px 8px 15px;
-  border: 1px solid #ccc;
-  border-radius: 0px;
-  margin-bottom: 20px;
-  margin-top: 2px;
-  width: 100%;
-  color: #2c3e50;
-  background-color: #eceff1;
-  font-size: 16px;
-  letter-spacing: 1px;
-}
-
-.submit-btn {
-  float: right;
-}
-
-.help-block {
-  color: red;
-}
-/*img{
-  max-width: 180px;
-}*/
-input[type="file"] {
-  padding: 10px;
-}
-/****************************signup modal end**************************/
+/****************************Button**************************/
 
 .btn {
   color: #2ecab6;
