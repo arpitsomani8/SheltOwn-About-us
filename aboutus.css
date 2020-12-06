@@ -15,141 +15,50 @@ html {
 .top {
   width: 100%;
 }
-.top {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+.section1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("images/town1.png");
-
-  /*clip-path: ellipse(130px 140px at 10% 20%);*/
-  color: white;
-  padding: 50px 30px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.top {
+  background: #2ecab6;
+  clip-path: ellipse(75% 100% at 45% -10%);
+  /*clip-path: circle(100% at 50% -20%);*/
+  color: black;
+  padding: 30px 30px 50px 30px;
 }
 .fa-angle-right {
   font-size: 30px;
   color: red;
   margin: auto;
 }
+.images img {
+}
+
 @media (max-width: 576px) {
   .images img {
     width: 100%;
     height: auto;
   }
-  .images h5 {
-    font-size: 16px;
+  .images h6 {
+    font-size: 15px;
+  }
+  .top h2 {
+    font-size: 20px;
   }
 }
 /*--------------------top part end------------------------*/
-/*-----------------------1st part start------------------------------------------->*/
-.a1 {
-  background: #2ecab6;
-  height: 260px;
-  background-size: 100% 100%;
-  padding-top: 60px;
-  width: 100%;
-}
-.container1 {
-  margin: 0 auto;
-  width: 94%;
-  max-width: 1600px;
-  margin-top: -117px;
-  background: white;
-  /*overflow: visible;*/
-}
-.fa-check {
-  color: #2ecab6;
-  margin-right: 10px;
-}
-.fa-map-marker-alt {
-  color: #2ecab6;
-  margin-right: 5px;
-}
-.tick p {
-  margin-bottom: 5px;
-}
-.cards img {
-  height: 200px;
-}
-.btn.btn-search {
-  background: #2ecab6 !important;
-  border-radius: 0;
-  color: white;
-}
-.a2 a:hover {
-  color: green !important;
-}
-input[type="search"] {
-  padding-top: 25px !important;
-  padding-bottom: 25px !important;
-}
-.btn.btn-search {
-  padding-top: 13px !important;
-  padding-bottom: 13px !important;
-}
-/*---------------------------1st part end---------------------------------------------*/
 
 /*------------------------all media queries-----------------------------*/
 
 @media (max-width: 741px) and (min-width: 576px) {
-  .a1 {
-    height: 280px;
-  }
 }
 @media (max-width: 576px) {
-  .a1 {
-    height: 300px;
-    padding-top: 50px;
-  }
-  .a1 span {
-    display: block;
-  }
-  .navbar-brand {
-    padding-left: 0 !important;
-  }
-  .dropdown {
-    margin-left: -20px !important;
-  }
-  .navbar-brand {
-    font-size: 18px;
-  }
-  .navbar-brand p {
-    font-size: 12px;
-  }
-  .tick p,
-  .a2 p,
-  .last p {
-    font-size: 14px;
-  }
-  .premium {
-    text-align: left !important;
-  }
-  .a2 {
-    padding-top: 10px !important;
-  }
-  input[type="search"] {
-    font-size: 10px;
-  }
-  .btn.btn-search {
-    font-size: 10px;
-    padding-top: 17px !important;
-    padding-bottom: 18px !important;
-  }
-  .faimage img {
-    height: 200px !important;
-  }
 }
 @media (max-width: 386px) and (min-width: 381px) {
-  .img1 {
-    width: auto;
-    height: 3vh;
-  }
-  .dropdown {
-    margin-left: -25px !important;
-  }
 }
-@media (max-width: 381px) {
-  .dropdown {
-    margin-left: -35px !important;
-  }
-}
+
 /*-----------------------1st part end------------------------------------------->*/
 /*--------------------.100% safety &why sheltown part start-------------------------*/
 
@@ -229,6 +138,60 @@ input[type="search"] {
 .morecontent span {
   display: none;
 }
+
+/*---------------------------contact us part start--------------------------*/
+/****************************Button**************************/
+
+.btn {
+  color: #2ecab6;
+  font-weight: bold;
+  border: 2px solid #1f6d62;
+  font-size: 20px;
+}
+.hvr-right {
+  display: inline-block;
+  vertical-align: middle;
+  transition-duration: 0.5s;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0);
+  position: relative;
+  transition-property: color;
+}
+.hvr-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #2ecab6;
+  transition-timing-function: ease-out;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition-property: transform;
+  transition-duration: 0.5s;
+}
+.hvr-right:hover,
+.hvr-right:focus,
+.hvr-right:active {
+  color: #000;
+}
+.hvr-right:hover:before,
+.hvr-right:focus:before,
+.hvr-right:active:before {
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  transform: scaleX(1);
+}
+input[type="text"],
+input[type="email"] {
+  border: none !important;
+
+  border-radius: 0 !important;
+  border-bottom: 1px solid #ccc !important;
+}
+
+/*---------------------------contact us end---------------------------------------------*/
 /*---------------------------last part start---------------------------------------------*/
 .fa-handshake,
 .fa-user-shield,
@@ -271,47 +234,3 @@ footer a {
   opacity: 1;
 }
 /*---------------------------last part end---------------------------------------------*/
-
-/****************************Button**************************/
-
-.btn {
-  color: #2ecab6;
-  font-weight: bold;
-  border: 2px solid #1f6d62;
-  font-size: 25px;
-}
-.hvr-right {
-  display: inline-block;
-  vertical-align: middle;
-  transition-duration: 0.5s;
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0);
-  position: relative;
-  transition-property: color;
-}
-.hvr-right:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #2ecab6;
-  transition-timing-function: ease-out;
-  transform: scaleX(0);
-  transform-origin: 0 50%;
-  transition-property: transform;
-  transition-duration: 0.5s;
-}
-.hvr-right:hover,
-.hvr-right:focus,
-.hvr-right:active {
-  color: #000;
-}
-.hvr-right:hover:before,
-.hvr-right:focus:before,
-.hvr-right:active:before {
-  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-  transform: scaleX(1);
-}
