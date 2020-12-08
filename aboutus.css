@@ -7,9 +7,6 @@
 body {
   background: #f1f3f6;
 }
-html {
-  /*scroll-behavior: smooth;*/
-}
 
 .navbar-brand {
   font-size: 20px;
@@ -50,12 +47,19 @@ html {
   .navbar-brand {
     padding-left: 0 !important;
   }
-
+  .dropdown {
+    margin-left: -20px !important;
+  }
   .navbar-brand {
     font-size: 18px;
   }
   .navbar-brand p {
     font-size: 12px;
+  }
+  .tick p,
+  .a2 p,
+  .last p {
+    font-size: 14px;
   }
 }
 @media (max-width: 386px) and (min-width: 381px) {
@@ -63,8 +67,15 @@ html {
     width: auto;
     height: 3vh;
   }
+  .dropdown {
+    margin-left: -25px !important;
+  }
 }
-
+@media (max-width: 381px) {
+  .dropdown {
+    margin-left: -35px !important;
+  }
+}
 /*---------------------top part---------------------------- */
 .section1,
 .top {
@@ -78,7 +89,7 @@ html {
   background-size: 100% 100%;
 }
 .top {
-  background: linear-gradient(to right, #1eebc9 4%, #2ecab6 100%);
+  background: #2ecab6;
   clip-path: ellipse(75% 100% at 45% -10%);
   /*clip-path: circle(100% at 50% -20%);*/
   color: black;
@@ -106,19 +117,16 @@ html {
 }
 /*--------------------top part end------------------------*/
 /*------------our service part start------------------*/
-/*background: linear-gradient(to right, #6ef7c3 4%, #2ecab6 100%);*/
-.img1 {
-  width: 30%;
+/*.img1 {
+  width: 70%;
   height: auto;
-  margin: auto;
 }
-
-@media (max-width: 577px) {
-  .img1 {
-    /*width: 100%;
-  height: auto;*/
-  }
+@media (max-width: 577px){
+ .img1 {
+  width: 100%;
+  height: auto;
 }
+}*/
 .cf h5 {
   font-weight: bold;
 }
@@ -128,44 +136,66 @@ html {
 }
 .cf .card {
   margin-bottom: 5px;
-  border: none;
-  background: none;
-  transition: all 1.5s ease;
-}
-.cf .card:hover {
-  transform: scale(1.2);
 }
 
 /*---------------our service part end------------------*/
 /*-------------------------our team--------------*/
-
-.imgarea {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin: 0 auto;
+.item .box {
+  position: relative;
+  padding: 80px 40px 40px;
+  transition: 0.5s;
+  text-align: center;
+  background-color: #fff;
 }
-.imgarea img {
-  width: 100%;
-  height: 100%;
-}
-.item .card {
-  padding: 10% 5%;
-}
-.item .card h3 {
-  color: #ff0057;
-}
-.text h3 {
-  color: black !important;
-}
-.item .card:hover {
+.item .box:hover {
   background-color: #ff0057;
 }
-.item .card:hover p,
-.item .card:hover h3 {
+/*.item .box p{
+  margin:0px;
+  padding: 0px;
+  transition: 0.5s;
+ }*/
+.item .box h3 {
+  margin: 20px 0 0;
+  padding: 0px;
+  transition: 0.5s;
+  color: #ff0057;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+/*.item .box h3 span{
+  font-weight: 600;
+  font-size: 14px;
+  color:#c5c5c5;
+  transition: 0.5s;
+ }*/
+.item .box:hover p,
+.item .box:hover h3,
+.item .box:hover span {
   color: #fff;
 }
+.item .box .imgbox {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.imgbox {
+  padding-top: -20px;
+  margin-top: 20px;
+}
+/*.imgbox img{
+  
+  height: 100px; 
+  width: auto;
+  border-radius: 50%;
+ }*/
 /*-------------our team end----------------------*/
 /*---------------our family part start------------------*/
 .icon-content,
@@ -333,3 +363,12 @@ footer a {
   opacity: 1;
 }
 /*---------------------------last part end---------------------------------------------*/
+.quot {
+  text-align: center;
+  outline: 3px solid #bfbfbf;
+}
+
+#vision {
+  font-size: 22px;
+  font-weight: bold;
+}
