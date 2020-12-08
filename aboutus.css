@@ -8,7 +8,7 @@ body {
   background: #f1f3f6;
 }
 html {
-  scroll-behavior: smooth;
+  /*scroll-behavior: smooth;*/
 }
 
 .navbar-brand {
@@ -50,19 +50,12 @@ html {
   .navbar-brand {
     padding-left: 0 !important;
   }
-  .dropdown {
-    margin-left: -20px !important;
-  }
+
   .navbar-brand {
     font-size: 18px;
   }
   .navbar-brand p {
     font-size: 12px;
-  }
-  .tick p,
-  .a2 p,
-  .last p {
-    font-size: 14px;
   }
 }
 @media (max-width: 386px) and (min-width: 381px) {
@@ -70,15 +63,8 @@ html {
     width: auto;
     height: 3vh;
   }
-  .dropdown {
-    margin-left: -25px !important;
-  }
 }
-@media (max-width: 381px) {
-  .dropdown {
-    margin-left: -35px !important;
-  }
-}
+
 /*---------------------top part---------------------------- */
 .section1,
 .top {
@@ -92,7 +78,7 @@ html {
   background-size: 100% 100%;
 }
 .top {
-  background: #2ecab6;
+  background: linear-gradient(to right, #1eebc9 4%, #2ecab6 100%);
   clip-path: ellipse(75% 100% at 45% -10%);
   /*clip-path: circle(100% at 50% -20%);*/
   color: black;
@@ -120,16 +106,19 @@ html {
 }
 /*--------------------top part end------------------------*/
 /*------------our service part start------------------*/
-/*.img1 {
-  width: 70%;
+/*background: linear-gradient(to right, #6ef7c3 4%, #2ecab6 100%);*/
+.img1 {
+  width: 30%;
   height: auto;
+  margin: auto;
 }
-@media (max-width: 577px){
- .img1 {
-  width: 100%;
-  height: auto;
+
+@media (max-width: 577px) {
+  .img1 {
+    /*width: 100%;
+  height: auto;*/
+  }
 }
-}*/
 .cf h5 {
   font-weight: bold;
 }
@@ -139,6 +128,12 @@ html {
 }
 .cf .card {
   margin-bottom: 5px;
+  border: none;
+  background: none;
+  transition: all 1.5s ease;
+}
+.cf .card:hover {
+  transform: scale(1.2);
 }
 
 /*---------------our service part end------------------*/
