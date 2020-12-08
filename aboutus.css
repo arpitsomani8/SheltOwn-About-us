@@ -300,6 +300,23 @@ input[type="email"] {
 }
 
 /*---------------------------contact us end---------------------------------------------*/
+/*---------------------------Horizontal movement start---------------------------------------------*/
+.horizontal-scroll-wrapper {
+  width: 100vh;
+  height: 50vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transform: rotate(-90deg);
+  transform-origin: right top;
+  transform: rotate(-90deg) translateY(-100px);
+}
+.horizontal-scroll-wrapper > div {
+  width: 100%;
+  height: auto;
+  transform: rotate(90deg);
+  transform-origin: right top;
+}
+/*---------------------------Horizontal movement end---------------------------------------------*/
 /*---------------------------last part start---------------------------------------------*/
 .fa-handshake,
 .fa-user-shield,
