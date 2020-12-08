@@ -10,7 +10,6 @@ body {
 html {
   /*scroll-behavior: smooth;*/
 }
-
 .navbar-brand {
   font-size: 20px;
   margin-top: 5px !important;
@@ -102,6 +101,9 @@ html {
   }
   .top h2 {
     font-size: 20px;
+  }
+  .section1 {
+    padding-top: 8vh;
   }
 }
 /*--------------------top part end------------------------*/
