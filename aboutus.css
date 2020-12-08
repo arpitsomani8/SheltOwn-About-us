@@ -49,13 +49,13 @@ html {
   .navbar-brand {
     padding-left: 0 !important;
   }
-
+  /*
   .navbar-brand {
     font-size: 18px;
   }
   .navbar-brand p {
     font-size: 12px;
-  }
+  }*/
 }
 @media (max-width: 386px) and (min-width: 381px) {
   .img1 {
